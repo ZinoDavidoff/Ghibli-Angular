@@ -1,0 +1,11 @@
+<h1>{{ title }}</h1>
+<div class="movie-grid-container">
+  <div class="movie-card" *ngFor="let movie of movies">
+    <h3>{{ movie.title }}</h3>
+    <img [routerLink]="'/movies/' + movie.id" [src]="movie.image" alt="img">
+    <p>{{ movie.description }}</p>
+    <p>{{ movie.director }}</p>
+    <p>{{ movie.release_date }}</p>
+    <p>{{ movie.rt_score }}</p>
+  </div>
+</div>

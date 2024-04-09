@@ -1,0 +1,13 @@
+<div style="display: flex; flex-basis: 50%; gap: 20px;">
+  <div>
+    <button routerLink="/movies">Go Home</button>
+    <img [src]="movie.image" alt="img" height="600">
+  </div>
+  <div>
+    <h2>{{ movie.title }}</h2>
+    <p>{{ movie.description }}</p>
+    <p>{{ movie.original_title }}</p>
+    <p> {{ movie.release_date }} </p>
+    <p> {{ movie.director }} </p>
+  </div>
+</div>
